@@ -1,0 +1,117 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+::placeholder {
+  user-select: none;
+  font-size: small;
+}
+
+.table-responsive-thead {
+  background-color: rgb(146, 143, 143);
+  color: aliceblue;
+}
+
+.login-signup-class {
+  width: 40%;
+}
+
+.home-container-child-1 {
+  width: 35%;
+}
+
+.home-container-child-2 {
+  width: 65%;
+}
+
+.home-container-child-2 h1 {
+  /* text-shadow: 4px 4px 4px #aaa; */
+}
+
+@media screen and (max-width: 600px) {
+  .home-container-parent {
+    flex-direction: column;
+  }
+  .home-container-child-1 {
+    width: 100%;
+    margin-bottom: 15px;
+    font-size: 60px;
+  }
+  .home-container-child-2 {
+    width: 100%;
+  }
+  .home-container-child-2.flex-column {
+    font-size: 60px;
+  }
+  .login-signup-class {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .container-parent-1 {
+    flex-wrap: wrap;
+  }
+  .container-child-1 {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+  .container-child-2 {
+    width: 100%;
+    display: flex;
+    justify-content: end;
+  }
+  .login-signup-class {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .dashboard-search-form {
+    min-width: 230px;
+  }
+}
+
+
+/* ————————————————————————————————— */
+
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
